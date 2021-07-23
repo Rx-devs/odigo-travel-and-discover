@@ -1,0 +1,68 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+/* common css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+img{
+    width: 100%;
+}
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+/* header */
+header {
+    height: 960px;
+    background-image: url('../images/hero-banner-img.png');
+    background-size: cover;
+    
+}
+header::before{
+    height: 960px;
+    content: '';
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(53, 66, 103, 0.0001) 0%, #151824 95.04%);
+}
+
+/* navbar */
+nav {
+    padding: 50px 75px 0 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 80px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+}
