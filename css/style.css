@@ -22,6 +22,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    object-fit: cover;
+}
+
 .container {
     max-width: 90%;
     margin: 0 auto;
@@ -46,7 +50,6 @@ header {
     height: 960px;
     background-image: url('../images/hero-banner-img.png');
     background-size: cover;
-    display: none;
 }
 
 header::before {
@@ -90,14 +93,12 @@ nav ul li a {
 .hero-area {
     padding: 50px 75px 0 100px;
     position: relative;
-    /* border: 1px solid; */
 }
 
 .hero-area-title {
     font-size: 50px;
     line-height: 60px;
     margin: 100px 40% 0 0;
-    /* border: 1px solid; */
 }
 
 .hero-area-info {
@@ -144,14 +145,8 @@ nav ul li a {
 }
 
 /* benefits area */
-#benefits {
-    /* display: none; */
-}
-
 .benefits-area {
-
     padding: 80px 60px 60px 80px;
-    border: 1px solid;
     background-color: #fff;
 }
 
@@ -186,11 +181,13 @@ nav ul li a {
     justify-content: space-between;
     margin-bottom: 30px;
 }
-.get-inspired-top h1 > hr{
+
+.get-inspired-top h1>hr {
     width: 55%;
     margin-top: 8px;
     border: 1px solid #006DFE;
 }
+
 .get-inspired-gallery {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -243,4 +240,29 @@ nav ul li a {
     color: #fff;
     font-size: 40px;
     padding: 25px;
+}
+
+/* prefecture and neighborhood */
+.prefecture-neighborhood-area{
+    margin-top: 100px;
+}
+.prefecture-detail{
+    padding: 0 50px 0 100px;
+}
+.prefecture-area{
+    margin-bottom: 70px;
+}
+
+.prefecture-detail h1,
+.neighborhood-detail h1 {
+    margin-bottom: 70px;
+}
+
+.prefecture-detail p,
+.neighborhood-detail p {
+    margin-bottom: 30px;
+    line-height: 24px;
+}
+.neighborhood-detail{
+    padding: 0 100px 0 50px;
 }
