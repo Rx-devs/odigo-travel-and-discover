@@ -15,6 +15,7 @@ body {
 
 main {
     position: relative;
+    transition: transform 3s ease-in-out .3s;
     transform: translateY(-200px);
 }
 
@@ -24,6 +25,12 @@ a {
 
 img {
     object-fit: cover;
+}
+
+hr {
+    width: 180px;
+    margin-top: 8px;
+    border: 1px solid #006DFE;
 }
 
 .container {
@@ -182,12 +189,6 @@ nav ul li a {
     margin-bottom: 30px;
 }
 
-.get-inspired-top h1>hr {
-    width: 55%;
-    margin-top: 8px;
-    border: 1px solid #006DFE;
-}
-
 .get-inspired-gallery {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -243,13 +244,15 @@ nav ul li a {
 }
 
 /* prefecture and neighborhood */
-.prefecture-neighborhood-area{
+.prefecture-neighborhood-area {
     margin-top: 100px;
 }
-.prefecture-detail{
+
+.prefecture-detail {
     padding: 0 50px 0 100px;
 }
-.prefecture-area{
+
+.prefecture-area {
     margin-bottom: 70px;
 }
 
@@ -263,6 +266,63 @@ nav ul li a {
     margin-bottom: 30px;
     line-height: 24px;
 }
-.neighborhood-detail{
+
+.neighborhood-detail {
     padding: 0 100px 0 50px;
+}
+
+/* top places */
+.top-places-area {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.top-places-title {
+    margin-bottom: 50px;
+}
+
+.top-places {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.place-img {
+    position: relative;
+}
+
+.place-img > img {
+    width: 100%;
+    height: 350px;
+}
+
+.place-info {
+    position: absolute;
+    bottom: 2px;
+    right: 0;
+    justify-content: space-between;
+    background: rgba(21, 24, 36, 0.6);
+    width: 100%;
+    color: #fff;
+    padding: 15px 20px 16px 25px;
+}
+
+.likes-icon {
+    margin: 0 14px 0 4px;
+}
+
+.comment-icon {
+    transform: rotateY(180deg);
+    margin-left: 8px;
+}
+
+.place-details p {
+    margin: 30px 0;
+    line-height: 20px;
+}
+
+.place-button {
+    padding: 12px 18px;
+    color: #fff;
+    background-color: #006DFE;
 }
