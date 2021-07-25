@@ -15,8 +15,8 @@
     <header>
 
         <!-- navbar -->
-        <nav class="container">
-            <h2>odigo</h2>
+        <nav class="container flex-container">
+            <div id="navbar-logo">odigo</div>
             <ul>
                 <li><a href="">Articles</a></li>
                 <li><a href="">Locations</a></li>
@@ -26,23 +26,27 @@
         </nav>
 
         <!-- hero area -->
-        <section class="hero-area container">
+        <section class="container">
+            <div class="hero-area">
                 <h1>Discover Amazing places in Japan</h1>
-                <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being gorgeous
-                    with belly side up i could pee on this if i had the energy but under the bed, for attack the child, open
+                <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over. Being
+                    gorgeous
+                    with belly side up i could pee on this if i had the energy but under the bed, for attack the child,
+                    open
                     the door.</p>
-           
-            <div class="search flex-container">
-                <div class="search-input-box flex-container">
-                    <img src="./images/icons/circle-icon.svg" width="20" height="20" alt="circle-icon">
-                    <input type="text" name="text" id="" placeholder="What would you like to do?">
+                <div class="search flex-container">
+                    <div class="search-input-box flex-container">
+                        <img src="./images/icons/circle-icon.svg" width="20" height="20" alt="circle-icon">
+                        <input type="text" name="text" placeholder="What would you like to do?">
+                    </div>
+                    <div class="search-input-box flex-container">
+                        <img src="./images/icons/circle-icon.svg" width="20" height="20" alt="circle-icon">
+                        <input type="text" name="text" placeholder="Where would you like to go?">
+                    </div>
+                    <button id="search-button">SEARCH</button>
                 </div>
-                <div class="search-input-box flex-container">
-                    <img src="./images/icons/circle-icon.svg" width="20" height="20" alt="circle-icon">
-                    <input type="text" name="text" id="" placeholder="Where would you like to go?">
-                </div>
-                <a href="#" target="_blank"><button id="search-button">SEARCH</button></a>
             </div>
+
 
         </section>
     </header>
@@ -92,23 +96,23 @@
             <div class="get-inspired-gallery">
                 <div class="gallery-img" id="gallery-img-one">
                     <img src="./images/get-inspired/get-inspired-img-1.png" alt="">
-                    <div class="img-detail">Mount Fuji</div>
+                    <div class="gallery-img-info">Mount Fuji</div>
                 </div>
                 <div class="gallery-img" id="gallery-img-two">
                     <img src="./images/get-inspired/get-inspired-img-2.png" alt="">
-                    <div class="img-detail">Kyoto</div>
+                    <div class="gallery-img-info">Kyoto</div>
                 </div>
                 <div class="gallery-img" id="gallery-img-three">
                     <img src="./images/get-inspired/get-inspired-img-3.png" alt="">
-                    <div class="img-detail">Tokyo</div>
+                    <div class="gallery-img-info">Tokyo</div>
                 </div>
                 <div class="gallery-img" id="gallery-img-four">
                     <img src="./images/get-inspired/get-inspired-img-4.png" alt="">
-                    <div class="img-detail">Niigata</div>
+                    <div class="gallery-img-info">Niigata</div>
                 </div>
                 <div class="gallery-img" id="gallery-img-five">
                     <img src="./images/get-inspired/get-inspired-img-5.png" alt="">
-                    <div class="img-detail">Sapporo</div>
+                    <div class="gallery-img-info">Sapporo</div>
                 </div>
             </div>
         </section>
@@ -118,11 +122,10 @@
             <div class="prefecture-neighborhood-area">
                 <article class="prefecture-area flex-container">
                     <div class="prefecture-img">
-                        <img src="./images/prefecture-&-neighborhood/prefecture-neighborhood-img-1.png" width="550"
-                            height="300" alt="">
+                        <img src="./images/prefecture-&-neighborhood/prefecture-neighborhood-img-1.png" height="354" alt="">
                     </div>
                     <div class="prefecture-detail">
-                        <h1>Prefecture in Focus: Tottori</h1>
+                        <h3>Prefecture in Focus: Tottori</h3>
                         <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
                             Being
                             gorgeous with belly side up i could pee on this if i had the energy but under the bed, for
@@ -133,7 +136,7 @@
                 </article>
                 <article class="neighborhood-area flex-container">
                     <div class="neighborhood-detail">
-                        <h1>Featured Neighborhood: Kyoto’s Arashiyama</h1>
+                        <h3>Featured Neighborhood: Kyoto’s Arashiyama</h3>
                         <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
                             Being
                             gorgeous with belly side up i could pee on this if i had the energy but under the bed, for
@@ -142,8 +145,7 @@
                                 src="./images/icons/arrow-icon.svg" width="30" height="24" alt=""></a>
                     </div>
                     <div class="neighborhood-img">
-                        <img src="./images/prefecture-&-neighborhood/prefecture-neighborhood-img-2.png" width="550"
-                            height="300" alt="">
+                        <img src="./images/prefecture-&-neighborhood/prefecture-neighborhood-img-2.png" height="354" alt="">
                     </div>
                 </article>
             </div>
@@ -161,7 +163,7 @@
                         <div class="place-img">
                             <img src="./images/top-places/top-places-img-1.png" alt="NAGOYA">
                             <div class="place-info flex-container">
-                                <h4>NAGOYA</h4>
+                                <span class="place-name">NAGOYA</span>
                                 <p class="flex-container"><span>200</span>
                                     <img class="likes-icon" src="./images/icons/favourite-icon.svg" width="16"
                                         height="16" alt=""><span>50</span>
@@ -170,7 +172,6 @@
                                 </p>
                             </div>
                         </div>
-
                         <div class="place-details">
                             <p>Jump off balcony, onto stranger's head. Chase ball of string hide when guests come over.
                                 I had the energy but under the bed, for attack the child, open the door.</p>
@@ -181,7 +182,7 @@
                         <div class="place-img">
                             <img src="./images/top-places/top-places-img-2.png" alt="NAGOYA">
                             <div class="place-info flex-container">
-                                <h4>NIIGATA</h4>
+                                <span class="place-name">NIIGATA</span>
                                 <p class="flex-container"><span>200</span>
                                     <img class="likes-icon" src="./images/icons/favourite-icon.svg" width="16"
                                         height="16" alt=""><span>50</span>
@@ -200,7 +201,7 @@
                         <div class="place-img">
                             <img src="./images/top-places/top-places-img-3.png" alt="OSAKA">
                             <div class="place-info flex-container">
-                                <h4>OSAKA</h4>
+                                <span class="place-name">OSAKA</span>
                                 <p class="flex-container"><span>200</span>
                                     <img class="likes-icon" src="./images/icons/favourite-icon.svg" width="16"
                                         height="16" alt=""><span>50</span>
@@ -219,7 +220,7 @@
                         <div class="place-img">
                             <img src="./images/top-places/top-places-img-4.png" alt="SAITAMA">
                             <div class="place-info flex-container">
-                                <h4>SAITAMA</h4>
+                                <span class="place-name">SAITAMA</span>
                                 <p class="flex-container"><span>200</span>
                                     <img class="likes-icon" src="./images/icons/favourite-icon.svg" width="16"
                                         height="16" alt=""><span>50</span>
@@ -238,7 +239,7 @@
                         <div class="place-img">
                             <img src="./images/top-places/top-places-img-5.png" alt="UENO">
                             <div class="place-info flex-container">
-                                <h4>UENO</h4>
+                                <span class="place-name">UENO</span>
                                 <p class="flex-container"><span>200</span>
                                     <img class="likes-icon" src="./images/icons/favourite-icon.svg" width="16"
                                         height="16" alt=""><span>50</span>
@@ -257,7 +258,7 @@
                         <div class="place-img">
                             <img src="./images/top-places/top-places-img-6.png" alt="SHIBUYA">
                             <div class="place-info flex-container">
-                                <h4>SHIBUYA</h4>
+                                <span class="place-name">SHIBUYA</span>
                                 <p class="flex-container"><span>200</span>
                                     <img class="likes-icon" src="./images/icons/favourite-icon.svg" width="16"
                                         height="16" alt=""><span>50</span>
