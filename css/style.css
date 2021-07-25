@@ -47,7 +47,7 @@ h4 {
 }
 
 h5 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
 }
 
 h6 {
@@ -369,9 +369,6 @@ nav ul li a {
     width: 100%;
     color: #fff;
     padding: 15px 20px 16px 25px;
-}
-.place-name{
-    font-size: 1.125rem;
 }
 .likes-icon {
     margin: 0 14px 0 4px;
